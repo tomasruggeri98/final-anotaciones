@@ -1,0 +1,97 @@
+//declaracion arrays
+
+int[] vector = new int[50]; 
+object[] empresa = new object[50];
+
+// arrays char
+
+string[] Nombres = new string [5];
+
+Console.WriteLine("Ingrese 5 nombres:");
+
+for  (int i = 0; i < Nombres.Length; i++)
+{
+    Nombres[i] = Console.ReadLine();
+}
+
+
+
+//recorrer array con for y agregar datos con readline
+
+for (int i = 0; i < vector.Length; i++)
+{
+    vector[i] = Convert.ToInt32(Console.ReadLine());
+
+}
+
+
+
+//reconocer pares e impares
+
+for (int i = 0; i < vector.Length; i++)
+{
+    if (vector[i] % 2 == 0) { Console.WriteLine("los numeros pares son" + vector[i]); }
+}
+
+for (int i = 0; i < vector.Length; i++)
+{
+    if (vector[i] % 2 != 0) { Console.WriteLine("los numeros impares son" + vector[i]); }
+}
+
+
+
+
+//agregar valores + recorrer inverso
+
+
+for (int i = 0; i < array1.Length; i++)
+{
+    Console.Write("ingresar el valor:", i + 1);
+    array1[i] = Convert.ToInt32(Console.ReadLine());
+}
+
+for (int i = array1.Length - 1; i >= 0; i--)
+{
+    Console.WriteLine(array1[i]);
+}
+
+
+
+
+// array enteros + sumar los valores 
+
+
+int[] array1 = new int[10];
+for (int i = 0; i < array1.Length; i++)
+{
+    Console.Write("ingresar el valor:");
+    array1[i] = Convert.ToInt32(Console.ReadLine());
+}
+int sum = array1.Sum();
+Console.WriteLine(sum);
+
+
+// promedio
+
+Console.WriteLine("ingresar cantidad de alumnos:");
+
+int Cantidad = int.Parse(Console.ReadLine());
+
+float[] Calificaciones =  new float[Cantidad];
+float Total = 0;
+
+Console.WriteLine("ingresar las notas de los alumnos");
+
+for (int i = 0; i < Cantidad; i++)
+{
+    Calificaciones[i] = float.Parse(Console.ReadLine());
+    Total += Calificaciones[i];
+}
+
+float Promedio = Total / Cantidad;
+
+Console.WriteLine("El promedio es de " + Promedio);
+
+
+//github viktor
+https://github.com/xvacorx/Practica-personal-C-----AI-Generated-Practice
