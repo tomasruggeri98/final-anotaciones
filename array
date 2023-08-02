@@ -44,15 +44,15 @@ for (int i = 0; i < vector.Length; i++)
 //agregar valores + recorrer inverso
 
 
-for (int i = 0; i < array1.Length; i++)
+for (int i = 0; i < vector.Length; i++)
 {
     Console.Write("ingresar el valor:", i + 1);
-    array1[i] = Convert.ToInt32(Console.ReadLine());
+    vector[i] = Convert.ToInt32(Console.ReadLine());
 }
 
-for (int i = array1.Length - 1; i >= 0; i--)
+for (int i = vector.Length - 1; i >= 0; i--)
 {
-    Console.WriteLine(array1[i]);
+    Console.WriteLine(vector[i]);
 }
 
 
@@ -61,13 +61,13 @@ for (int i = array1.Length - 1; i >= 0; i--)
 // array enteros + sumar los valores 
 
 
-int[] array1 = new int[10];
-for (int i = 0; i < array1.Length; i++)
+int[] vector = new int[10];
+for (int i = 0; i < vector.Length; i++)
 {
     Console.Write("ingresar el valor:");
-    array1[i] = Convert.ToInt32(Console.ReadLine());
+    vector[i] = Convert.ToInt32(Console.ReadLine());
 }
-int sum = array1.Sum();
+int sum = vector.Sum();
 Console.WriteLine(sum);
 
 
@@ -75,17 +75,17 @@ Console.WriteLine(sum);
 
 Console.WriteLine("ingresar cantidad de alumnos:");
 
-int Cantidad = int.Parse(Console.ReadLine());
+int Cantidad = int.Parse(Console.ReadLine());  //definimos variable Cantidad que contiene la cantidad de alumnos
 
-float[] Calificaciones =  new float[Cantidad];
-float Total = 0;
+float[] Calificaciones =  new float[Cantidad];  //definimos vector Calificaciones con el tamaño de Cantidad
+float Total = 0; 
 
 Console.WriteLine("ingresar las notas de los alumnos");
 
 for (int i = 0; i < Cantidad; i++)
 {
-    Calificaciones[i] = float.Parse(Console.ReadLine());
-    Total += Calificaciones[i];
+    Calificaciones[i] = float.Parse(Console.ReadLine());  //vamos guardando las notas en Calificaciones
+    Total += Calificaciones[i]; 
 }
 
 float Promedio = Total / Cantidad;
@@ -93,5 +93,5 @@ float Promedio = Total / Cantidad;
 Console.WriteLine("El promedio es de " + Promedio);
 
 
-//github viktor
+//github ayuda viktor
 https://github.com/xvacorx/Practica-personal-C-----AI-Generated-Practice
